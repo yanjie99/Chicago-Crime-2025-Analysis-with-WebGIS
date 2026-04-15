@@ -1,5 +1,5 @@
 # Chicago-Crime-2025-Analysis-with-WebGIS
-📖 ## Project Overview
+## Project Overview
 This project investigates the spatial distribution of crime incidents in Chicago (2025) and examines their relationship with urban activity indicators, including business density, transportation accessibility, and policing infrastructure.
 
 The study integrates GIS analysis, spatial statistics, and WebGIS visualization to:
@@ -9,7 +9,7 @@ The study integrates GIS analysis, spatial statistics, and WebGIS visualization 
 - Diagnose spatial patterns through statistical modeling
 - Deliver interactive WebGIS outputs for interpretation
 
-🎯 ## Objectives
+## Objectives
 - Analyze spatial patterns of crime incidents in 2025
 - Examine relationships between crime and:
 - - Business activity
@@ -19,7 +19,7 @@ The study integrates GIS analysis, spatial statistics, and WebGIS visualization 
 - Perform statistical diagnostics (correlation + OLS)
 - Produce WebGIS-ready outputs for visualization
 
-🗂️ ## Project Structure
+## Project Structure
 
 ```
 ├── data/                         # (Not included) Raw datasets, raw dataset can be found on Chicago Data Portal
@@ -33,7 +33,7 @@ The study integrates GIS analysis, spatial statistics, and WebGIS visualization 
 └── README.md
 ```
 
-⚙️ ## Methodological Workflow
+## Methodological Workflow
 
 1. Spatial Data Preparation
 
@@ -46,7 +46,7 @@ The study integrates GIS analysis, spatial statistics, and WebGIS visualization 
 - - Convert to spatial formats (GeoDataFrames)
 - - Filter and clean datasets
 
-📄 **Notebook**:
+**Notebook**:
 `01_build_spatial_layers_and_filter_crime_business.ipynb`
 
 2. Spatial Aggregation
@@ -60,7 +60,7 @@ The study integrates GIS analysis, spatial statistics, and WebGIS visualization 
 - - cta_count
 - - police_count
 
-📄 **Notebook**:
+**Notebook**:
 `02_aggregate_to_community_areas.ipynb`
 
 3. Hotspot Detection & Statistical Analysis
@@ -72,7 +72,7 @@ The study integrates GIS analysis, spatial statistics, and WebGIS visualization 
 - - Spearman correlation
 - Visualize statistical relationships
 
-📄 **Notebook**:
+**Notebook**:
 `03_hotspot_and_stats.ipynb`
 
 4. Diagnostic Spatial Analysis
@@ -86,16 +86,16 @@ $$log(crime density)∼log(business density)+cta count+police count$$
 - - Spatial clustering patterns
 - Identify unexplained spatial variation
 
-📄 **Notebook**:
+**Notebook**:
 `04_community_area_diagnostic_analysis.ipynb`
 
-📊 ## Key Results
+## Key Results
 
 - Strong positive relationship between: Crime density and business density; Crime density and transit accessibility
 - KDE reveals: Concentrated hotspots in central urban areas
 - OLS diagnostics indicate: Remaining spatial structure (non-random residuals); Suggesting additional unobserved factors
 
-🌐 ## WebGIS Outputs
+## WebGIS Outputs
 
 The results are further visualized using:
 
@@ -110,7 +110,7 @@ Key layers include:
 - Crime-business interaction profiles
 - KDE hotspot rasters
 
-🧰 ## Technologies Used
+## Technologies Used
 **Python Libraries**
 `geopandas`
 `pandas`
